@@ -52,7 +52,7 @@ const Hero = () => {
         <p className="sm:text-3xl text-2xl font-medium text-white text-center font-generalsans">
           Hi, I am Vangelis <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">Creating all kinds of software TEST</p>
+        <p className="hero_tag text-gray_gradient">Creating all kinds of software</p>
       </div>
       <div className="w-full h-full absolute inset-0">
         <Leva />
