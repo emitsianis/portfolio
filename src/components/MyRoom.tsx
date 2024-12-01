@@ -1,4 +1,4 @@
-import { useGLTF } from '@react-three/drei';
+import { useGLTF, useTexture } from '@react-three/drei';
 import { Material, Mesh } from 'three';
 import { GroupProps } from '@react-three/fiber';
 
@@ -46,6 +46,8 @@ type Props = {
 const MyRoom = (props: Props) => {
   const { nodes, materials } = useGLTF('/models/hacker-room.glb') as unknown as GLTFResult;
 
+  const screenTxt = useTexture('textures/desk/screen.png');
+
   return (
     <group {...props as unknown as GroupProps} dispose={null}>
       <mesh
@@ -53,25 +55,29 @@ const MyRoom = (props: Props) => {
         receiveShadow
         geometry={nodes.computer_computer_mat_0.geometry}
         material={materials.computer_mat}
-      />
+      >
+      </mesh>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.server_server_mat_0.geometry}
         material={materials.server_mat}
-      />
+      >
+      </mesh>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.vhs_vhsPlayer_mat_0.geometry}
         material={materials.vhsPlayer_mat}
-      />
+      >
+      </mesh>
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.shelf_stand_mat_0.geometry}
         material={materials.stand_mat}
-      />
+      >
+      </mesh>
       <mesh
         castShadow
         receiveShadow
@@ -113,7 +119,9 @@ const MyRoom = (props: Props) => {
         receiveShadow
         geometry={nodes.screen_screens_0.geometry}
         material={materials.screens}
-      />
+      >
+        <meshMatcapMaterial map={screenTxt} />
+      </mesh>
       <mesh
         castShadow
         receiveShadow

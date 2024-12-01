@@ -20,7 +20,7 @@ const ReactLogo = (props: Props) => {
 
   return (
     <Float floatIntensity={1}>
-      <group scale={0.3} {...(props as GroupProps)} dispose={null}>
+      <group scale={0.4} {...(props as GroupProps)} dispose={null}>
         <mesh
           geometry={nodes['React-Logo_Material002_0'].geometry}
           material={materials['Material.002']}
