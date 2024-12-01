@@ -2,7 +2,7 @@
     <!-- Background -->
     <rect width="16" height="16" rx="2" fill="#1a1a1a"/>
     <!-- Sword -->
-    <rect x="7" y="2" width="2" height="4" rx="1" fill="#23395d"/>
+    <rect x="7" y="2" width="2" height="4" rx="1" fill="#7c3f00"/>
     <rect x="6" y="6" width="4" height="1" rx="1" fill="#b0c4de"/>
     <rect x="7" y="7" width="2" height="2" rx="1" fill="#b0c4de"/>
     <!-- Fire -->
