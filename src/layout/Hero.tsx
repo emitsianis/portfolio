@@ -8,8 +8,8 @@ import { calculateSizes } from '../constants';
 import Target from '../components/Target.tsx';
 import ReactLogo from '../components/ReactLogo.tsx';
 import Cube from '../components/Cube.tsx';
-import Rings from '../components/Rings.tsx';
 import HeroCamera from '../components/HeroCamera.tsx';
+import LinuxLogo from '../components/LinuxLogo.tsx';
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -30,7 +30,7 @@ const Hero = () => {
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-            <HeroCamera isMobile={isMobile}>
+            <HeroCamera isTablet={isTablet}>
               <MyRoom
                 position={sizes.deskPosition}
                 rotation={[0, -Math.PI, 0]}
@@ -41,7 +41,7 @@ const Hero = () => {
               <Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
               <Cube position={sizes.cubePosition} />
-              <Rings position={sizes.ringPosition} />
+              <LinuxLogo position={sizes.linuxLogoPosition} />
             </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />

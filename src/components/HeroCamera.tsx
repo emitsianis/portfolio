@@ -5,16 +5,16 @@ import { easing } from 'maath';
 
 type Props = {
   children: ReactNode;
-  isMobile: boolean;
+  isTablet: boolean;
 };
 
-const HeroCamera = ({ children, isMobile }: Props) => {
+const HeroCamera = ({ children, isTablet }: Props) => {
   const groupRef = useRef<Group>(null);
 
   useFrame((state, delta) => {
     if (!groupRef.current) return;
 
-    if (isMobile) {
+    if (isTablet) {
       easing.damp3(state.camera.position, [0, 0, 20], 0.25, delta);
     } else {
       easing.dampE(
@@ -25,7 +25,7 @@ const HeroCamera = ({ children, isMobile }: Props) => {
   });
 
   return (
-    <group ref={groupRef} scale={isMobile ? 1 : 1.3}>
+    <group ref={groupRef} scale={1}>
       {children}
     </group>
   );
