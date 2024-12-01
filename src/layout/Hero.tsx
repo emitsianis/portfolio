@@ -5,11 +5,11 @@ import { Suspense } from 'react';
 import CanvasLoader from '../components/CanvasLoader.tsx';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '../constants';
-import Target from '../components/Target.tsx';
 import ReactLogo from '../components/ReactLogo.tsx';
 import Cube from '../components/Cube.tsx';
 import HeroCamera from '../components/HeroCamera.tsx';
 import LinuxLogo from '../components/LinuxLogo.tsx';
+import JSLogo from '../components/JSLogo.tsx';
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </HeroCamera>
             <group>
-              <Target position={sizes.targetPosition} />
+              <JSLogo position={sizes.JSLogoPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
               <Cube position={sizes.cubePosition} />
               <LinuxLogo position={sizes.linuxLogoPosition} />
