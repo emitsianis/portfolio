@@ -3,48 +3,16 @@ import { PerspectiveCamera } from '@react-three/drei';
 import MyRoom from '../components/MyRoom.tsx';
 import { Suspense } from 'react';
 import CanvasLoader from '../components/CanvasLoader.tsx';
-import { Leva, useControls } from 'leva';
+import { useMediaQuery } from 'react-responsive';
+import { calculateSizes } from '../constants';
+import Target from '../components/Target.tsx';
 
 const Hero = () => {
-  const controls = useControls('HackerRoom', {
-    positionX: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionY: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionZ: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationX: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationY: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationZ: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    scale: {
-      value: 1,
-      min: 0.01,
-      max: 10,
-    },
-  });
+  const isSmall = useMediaQuery({ maxWidth: 440 });
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-  console.log(controls);
+  const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
@@ -55,15 +23,17 @@ const Hero = () => {
         <p className="hero_tag text-gray_gradient">Creating all kinds of software</p>
       </div>
       <div className="w-full h-full absolute inset-0">
-        <Leva />
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
-            <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+            <PerspectiveCamera makeDefault position={[0, 0, 20]} />
             <MyRoom
-              position={[2, -8, 2]}
+              position={sizes.deskPosition}
               rotation={[0, -Math.PI, 0]}
-              scale={[0.1, 0.1, 0.1]}
+              scale={sizes.deskScale}
             />
+            <group>
+              <Target position={sizes.targetPosition} />
+            </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>

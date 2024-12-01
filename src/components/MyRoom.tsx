@@ -1,5 +1,6 @@
 import { useGLTF } from '@react-three/drei';
 import { Material, Mesh } from 'three';
+import { GroupProps } from '@react-three/fiber';
 
 type GLTFResult = {
   nodes: {
@@ -37,8 +38,8 @@ type GLTFResult = {
 };
 
 type Props = {
-  scale: [number, number, number];
-  position: [number, number, number];
+  scale: number;
+  position: number[];
   rotation: [number, number, number];
 };
 
@@ -46,7 +47,7 @@ const MyRoom = (props: Props) => {
   const { nodes, materials } = useGLTF('/models/hacker-room.glb') as unknown as GLTFResult;
 
   return (
-    <group {...props} dispose={null}>
+    <group {...props as unknown as GroupProps} dispose={null}>
       <mesh
         castShadow
         receiveShadow
