@@ -10,6 +10,7 @@ import Cube from '../components/Cube.tsx';
 import HeroCamera from '../components/HeroCamera.tsx';
 import LinuxLogo from '../components/LinuxLogo.tsx';
 import JSLogo from '../components/JSLogo.tsx';
+import Button from '../components/Button.tsx';
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -47,6 +48,11 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>
+      </div>
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10">
+        <a href="#contact" className="w-fit">
+          <Button name="Lets work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96"/>
+        </a>
       </div>
     </section>
   );

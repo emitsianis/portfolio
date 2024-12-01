@@ -1,0 +1,18 @@
+type Props = {
+  name: string;
+  isBeam?: boolean;
+  containerClass?: string;
+}
+
+const Button = ({ name, isBeam = false, containerClass }: Props) => {
+  return (
+    <button className={`btn ${containerClass}`}>
+      {isBeam && <span className="flex relative h-3 w-3">
+        <span className="btn-ping"></span>
+        <span className="btn-ping_dot"></span>
+      </span>}
+      {name}
+    </button>
+  );
+};
+export default Button;
