@@ -6,10 +6,13 @@ import CanvasLoader from '../components/CanvasLoader.tsx';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '../constants';
 import Target from '../components/Target.tsx';
+import ReactLogo from '../components/ReactLogo.tsx';
+import Cube from '../components/Cube.tsx';
+import Rings from '../components/Rings.tsx';
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
@@ -33,6 +36,9 @@ const Hero = () => {
             />
             <group>
               <Target position={sizes.targetPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Cube position={sizes.cubePosition} />
+              <Rings position={sizes.ringPosition} />
             </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
