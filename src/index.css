@@ -152,7 +152,7 @@ body {
 }
 
 .navbar-brand {
-  height: 80px;
+  height: 40px;
   width: 100px;
   background-image: url("/public/assets/emits.png");
   background-position: center;
