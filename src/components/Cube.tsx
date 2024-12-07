@@ -11,8 +11,6 @@ type GLTFResult = {
 };
 
 const Cube = ({ ...props }) => {
-  console.log(props.position);
-
   const { nodes } = useGLTF('models/cube.glb') as unknown as GLTFResult;
 
   const texture = useTexture('textures/cube.png');

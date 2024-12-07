@@ -151,6 +151,15 @@ body {
   }
 }
 
+.navbar-brand {
+  height: 80px;
+  width: 100px;
+  background-image: url("/public/assets/emits.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130%;
+}
+
 .waving-hand {
   animation-name: wave-animation;
   animation-duration: 2.5s;
