@@ -32,16 +32,20 @@ const About = () => {
             <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">Hi, I'm Vangelis</p>
-              <p className="grid-subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                dignissimos fugiat itaque provident quas voluptas!</p>
+              <p className="grid-subtext">
+                I am a software engineer based in Greece! Owner of an Electric Engineering
+                degree and of a passion to always follow the cutting edge of software technology.
+              </p>
             </div>
           </div>
         </div>
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain" />
-            <div className="grid-headtext">Lorem ipsum.</div>
-            <div className="grid-subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, repellendus!
+            <div className="grid-headtext">Web dev + more!</div>
+            <div className="grid-subtext">
+              With years of experience on my back, I can create top-grade web apps taking advantage of the ReactJS
+              ecosystem.
             </div>
           </div>
         </div>
@@ -64,12 +68,11 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur,
-                itaque.
+                Let's connect
               </p>
               <p className="grid-subtext">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolore est
-                eveniet necessitatibus neque nesciunt quisquam rem repudiandae sit voluptatem?
+                Software development is a great way of bringing people around the world together. Let's connect and
+                build the next big thing together!
               </p>
               <Button name="Contact me" isBeam containerClass="w-full mt-10" />
             </div>
@@ -79,9 +82,13 @@ const About = () => {
           <div className="grid-container">
             <img src="/assets/grid3.png" alt="" className="w-full sm:h-[266px] h-fit object-contain" />
             <div>
-              <p className="grid-headtext">Lorem ipsum dolor sit amet.</p>
-              <p className="grid-subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
-                dignissimos fugiat itaque provident quas voluptas!</p>
+              <p className="grid-headtext">Jack of all trades (kinda)</p>
+              <p className="grid-subtext">
+                Web development, mobile development, game development, Linux and (recently) data science and LLM
+                engineering! Also gaming and some attempts at playing guitar. Skillset includes: JS, TS, Node, React,
+                React Native, Futter, Angular, Golang, Python, Langchain, Docker, Kubernetes, Git, Linux, SQL, NoSQL,
+                WoW, Dark Souls and more!
+              </p>
             </div>
           </div>
         </div>
