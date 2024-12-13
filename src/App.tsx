@@ -1,7 +1,7 @@
 import Navbar from './layout/Navbar.tsx';
 import Hero from './layout/Hero.tsx';
 import About from './layout/About.tsx';
-import Projects from './layout/Projects.tsx';
+import Skills from './layout/Skills.tsx';
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      <Projects />
+      <Skills />
     </main>
   );
 };

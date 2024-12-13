@@ -37,7 +37,7 @@ const DemoComputer = (props: Props) => {
   const group = useRef<Group | null>(null);
   const { nodes, materials } = useGLTF('/models/computer.glb') as unknown as GLTFResult;
 
-  const txt = useVideoTexture(props.texture || '/textures/project/project1.mp4');
+  const txt = useVideoTexture(props.texture);
 
   useEffect(() => {
     if (txt) {
