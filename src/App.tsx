@@ -3,6 +3,7 @@ import Hero from './layout/Hero.tsx';
 import About from './layout/About.tsx';
 import Skills from './layout/Skills.tsx';
 import Contact from './layout/Contact.tsx';
+import Footer from './layout/Footer.tsx';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <About />
       <Skills />
       <Contact />
+      <Footer />
     </main>
   );
 };
