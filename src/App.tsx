@@ -4,6 +4,7 @@ import About from './layout/About.tsx';
 import Skills from './layout/Skills.tsx';
 import Contact from './layout/Contact.tsx';
 import Footer from './layout/Footer.tsx';
+import Experience from './layout/Experience.tsx';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <Skills />
       <Contact />
+      <Experience />
       <Footer />
     </main>
   );
