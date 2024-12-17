@@ -74,7 +74,9 @@ const About = () => {
                 Software development is a great way of bringing people around the world together. Let's connect and
                 build the next big thing together!
               </p>
-              <Button name="Contact me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact" className="w-full mt-10 block">
+                <Button name="Contact me" isBeam containerClass="w-full" />
+              </a>
             </div>
           </div>
         </div>
