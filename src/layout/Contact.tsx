@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <section className="c-space my-20" id="contact">
-      <h3 className="head-text">Contact Me</h3>ƒ
+      <h3 className="head-text">Contact me</h3>ƒ
       <div className="flex items-center flex-col terminal">
         <div className="terminal-header">
           <div className="terminal-btn red"></div>

@@ -33,8 +33,10 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I'm Vangelis</p>
               <p className="grid-subtext">
-                I am a software engineer based in Greece! Owner of an Electric Engineering
-                degree and of a passion to always follow the cutting edge of software technology.
+                Software engineer, passionate gamer, and digital creator. I specialize in full-stack web development,
+                blending clean design with functional code to build seamless user experiences. From dynamic applications
+                to efficient systems and cutting-edge tech like Golang, data engineering, and LLMs—I bring ideas to
+                life.
               </p>
             </div>
           </div>
@@ -42,10 +44,10 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain" />
-            <div className="grid-headtext">Web dev + more!</div>
+            <div className="grid-headtext">Interactive UIs with React</div>
             <div className="grid-subtext">
-              With years of experience on my back, I can create top-grade web apps taking advantage of the ReactJS
-              ecosystem.
+              I build fast, scalable, and modern interfaces using React. From reusable components to optimized
+              performance with hooks and Next.js, I ensure intuitive and efficient user experiences.
             </div>
           </div>
         </div>
@@ -71,8 +73,11 @@ const About = () => {
                 Let's connect
               </p>
               <p className="grid-subtext">
-                Software development is a great way of bringing people around the world together. Let's connect and
-                build the next big thing together!
+                I believe the best projects come to life through collaboration. Whether you’re looking to create
+                innovative software, optimize existing systems, or explore new technologies, I’m always eager to connect
+                and share ideas. Feel free to reach out—whether it’s to discuss a project, exchange knowledge, or simply
+                talk about
+                gaming and tech trends. Let’s turn ideas into impactful solutions.
               </p>
               <a href="#contact" className="w-full mt-10 block">
                 <Button name="Contact me" isBeam containerClass="w-full" />
@@ -84,12 +89,14 @@ const About = () => {
           <div className="grid-container">
             <img src="/assets/grid3.png" alt="" className="w-full sm:h-[266px] h-fit object-contain" />
             <div>
-              <p className="grid-headtext">Jack of all trades (kinda)</p>
+              <p className="grid-headtext">Continuously growing through technology</p>
               <p className="grid-subtext">
-                Web development, mobile development, game development, Linux and (recently) data science and LLM
-                engineering! Also gaming and some attempts at playing guitar. Skillset includes: JS, TS, Node, React,
-                React Native, Futter, Angular, Golang, Python, Langchain, Docker, Kubernetes, Git, Linux, SQL, NoSQL,
-                WoW, Dark Souls and more!
+                For me, technology is a journey of constant learning and self-improvement. I’m always exploring new
+                tools and concepts—whether it’s diving into LLMs, understanding blockchain’s real-world applications, or
+                experimenting with game and mobile development.
+                Every project I take on is an opportunity to challenge myself, refine my skills, and create something
+                better than before. My focus is on growing with each experience and
+                pushing the boundaries of what I can achieve.
               </p>
             </div>
           </div>
@@ -118,4 +125,5 @@ const About = () => {
     </section>
   );
 };
+
 export default About;
