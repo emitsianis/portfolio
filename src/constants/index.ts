@@ -59,9 +59,9 @@ export const clientReviews = [
 export const mySkills = [
   {
     title: 'Web Development',
-    desc: 'Expertise in building modern, responsive web applications.',
+    desc: 'Crafting modern, responsive, and user-focused web applications.',
     subdesc:
-      'Proficient in creating scalable and maintainable web solutions using TypeScript, React, HTML, CSS, and JavaScript.',
+      'With expertise in TypeScript, React, HTML, CSS, and JavaScript, I specialize in building scalable, maintainable, and efficient web solutions. My focus is on delivering clean code, intuitive interfaces, and seamless performance to enhance user experience across devices.',
     texture: '/textures/skills/webdev.mp4',
     logo: '/assets/webdev-logo.png',
     logoStyle: {
@@ -80,9 +80,9 @@ export const mySkills = [
   },
   {
     title: 'Golang Development',
-    desc: 'Skilled in developing high-performance backend systems.',
+    desc: 'Building efficient and reliable systems with Go.',
     subdesc:
-      'Experience in building efficient server-side applications with Golang, focusing on concurrency and microservices.',
+      'With a growing proficiency in Golang, I focus on developing applications that prioritize performance and scalability. My experience includes working with concurrency patterns and microservices architecture, constantly improving with each project.',
     texture: '/textures/skills/golang.mp4',
     logo: '/assets/golang-logo.png',
     logoStyle: {
@@ -97,9 +97,9 @@ export const mySkills = [
   },
   {
     title: 'Data and LLM Engineering',
-    desc: 'Specialized in data engineering and large language models.',
+    desc: 'Exploring the intersection of data and AI with emerging technologies.',
     subdesc:
-      'Proficient in Python, LangChain, and Hugging Face for building data pipelines and AI models.',
+      'As a beginner in data engineering and large language models, I am developing skills in Python, LangChain, and Hugging Face. I am passionate about learning how to build data pipelines and leverage AI models, seeing this field as pivotal for the future.',
     texture: '/textures/skills/webdev.mp4',
     logo: '/assets/data-logo.png',
     logoStyle: {
@@ -115,9 +115,9 @@ export const mySkills = [
   },
   {
     title: 'Mobile Development',
-    desc: 'Experienced in creating mobile applications.',
+    desc: 'Building reliable and user-friendly mobile applications.',
     subdesc:
-      'Skilled in React Native and Flutter for cross-platform mobile app development.',
+      'With intermediate skills in React Native and Flutter, I create cross-platform mobile apps that prioritize performance and usability. I’m constantly refining my expertise in this dynamic field to deliver better mobile experiences.',
     texture: '/textures/skills/webdev.mp4',
     logo: '/assets/mobile-logo.png',
     logoStyle: {
@@ -133,9 +133,9 @@ export const mySkills = [
   },
   {
     title: 'Game Development',
-    desc: 'Passionate about creating immersive gaming experiences.',
+    desc: 'Merging passion and skills to craft engaging games.',
     subdesc:
-      'Proficient in Unreal Engine, Unity, and Godot for game design and development.',
+      'As a gaming enthusiast, I explore game design and development through tools like Unreal Engine, Unity, and Godot. While primarily a hobby, this pursuit allows me to combine creativity with technical expertise, deepening my connection to the gaming world.',
     texture: '/textures/skills/webdev.mp4',
     logo: '/assets/game-logo.png',
     logoStyle: {
