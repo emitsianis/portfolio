@@ -48,8 +48,8 @@ const Contact = () => {
         <div className="contact-container pb-24">
           <h3 className=" head-text">Let's talk</h3>
           <p className=" text-lg text-white-600 mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-            facere, magnam odit reprehenderit voluptatem voluptatum. Accusamus amet dolor itaque perferendis?
+            Have a project, idea, or just want to chat? I'd love to hear from you. Drop me a message, and I'll get back
+            to you as soon as possible!
           </p>
           <form ref={formRef} onSubmit={handleSubmit} className=" mt-12 flex flex-col space-y-7">
             <label className=" space-y-3">
