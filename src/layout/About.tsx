@@ -42,8 +42,10 @@ const About = () => {
           </div>
         </div>
         <div className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain" />
+          <div className="grid-container flex justify-center items-center">
+            <div className="flex justify-center items-center w-full h-full">
+              <img src="/assets/grid2.png" alt="grid-2" className="object-contain" />
+            </div>
             <div className="grid-headtext">Interactive UIs with React</div>
             <div className="grid-subtext">
               I build fast, scalable, and modern interfaces using React. From reusable components to optimized
