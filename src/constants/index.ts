@@ -62,7 +62,7 @@ export const mySkills = [
     desc: 'Crafting modern, responsive, and user-focused web applications.',
     subdesc:
       'With expertise in TypeScript, React, HTML, CSS, and JavaScript, I specialize in building scalable, maintainable, and efficient web solutions. My focus is on delivering clean code, intuitive interfaces, and seamless performance to enhance user experience across devices.',
-    texture: '/textures/skills/webdev.mp4',
+    texture: '/textures/skills/webdev.mov',
     logo: '/assets/webdev-logo.png',
     logoStyle: {
       backgroundColor: '#282C34',
@@ -83,7 +83,7 @@ export const mySkills = [
     desc: 'Building efficient and reliable systems with Go.',
     subdesc:
       'With a growing proficiency in Golang, I focus on developing applications that prioritize performance and scalability. My experience includes working with concurrency patterns and microservices architecture, constantly improving with each project.',
-    texture: '/textures/skills/golang.mp4',
+    texture: '/textures/skills/golang.mov',
     logo: '/assets/golang-logo.png',
     logoStyle: {
       backgroundColor: '#00ADD8',
@@ -100,7 +100,7 @@ export const mySkills = [
     desc: 'Exploring the intersection of data and AI with emerging technologies.',
     subdesc:
       'As a beginner in data engineering and large language models, I am developing skills in Python, LangChain, and Hugging Face. I am passionate about learning how to build data pipelines and leverage AI models, seeing this field as pivotal for the future.',
-    texture: '/textures/skills/webdev.mp4',
+    texture: '/textures/skills/python.mov',
     logo: '/assets/data-logo.png',
     logoStyle: {
       backgroundColor: '#FFD700',
@@ -118,7 +118,7 @@ export const mySkills = [
     desc: 'Building reliable and user-friendly mobile applications.',
     subdesc:
       'With intermediate skills in React Native and Flutter, I create cross-platform mobile apps that prioritize performance and usability. I’m constantly refining my expertise in this dynamic field to deliver better mobile experiences.',
-    texture: '/textures/skills/webdev.mp4',
+    texture: '/textures/skills/mobile.mov',
     logo: '/assets/mobile-logo.png',
     logoStyle: {
       backgroundColor: '#FF5722',
@@ -136,7 +136,7 @@ export const mySkills = [
     desc: 'Merging passion and skills to craft engaging games.',
     subdesc:
       'As a gaming enthusiast, I explore game design and development through tools like Unreal Engine, Unity, and Godot. While primarily a hobby, this pursuit allows me to combine creativity with technical expertise, deepening my connection to the gaming world.',
-    texture: '/textures/skills/webdev.mp4',
+    texture: '/textures/skills/gamedev.mov',
     logo: '/assets/game-logo.png',
     logoStyle: {
       backgroundColor: '#8E44AD',
